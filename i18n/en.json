@@ -20,7 +20,7 @@
   "sap.dev5": "Structured data handling (XSD, XML, JSON)",
   "sap.mig": "Migration projects",
   "sap.m1": "Data mapping and validation",
-  "sap.m2": "Cutover runbooks",
+  "sap.m2": "Designing new Software",
   "sap.m3": "Rollback and audit trails",
   "rpa.title": "RPA",
   "rpa.l1": "Planned, configured and operated automation environments including server setup",
