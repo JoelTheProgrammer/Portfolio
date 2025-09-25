@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Joel Angehrn — Portfolio</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <!--<link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">-->
     <link rel="icon" type="image/svg+xml" href="/icons/logo.png">
     <!-- html2pdf bundle for client-side PDF generation -->
     <script src="https://unpkg.com/html2pdf.js@0.9.3/dist/html2pdf.bundle.min.js"></script>
@@ -42,13 +41,13 @@
                         <span class="pill">APIs</span>
                     </div>
                 </div>
+
                 <div class="card">
                     <h4 data-i18n="hero.ctaTitle">Available for select projects</h4>
                     <p class="muted" data-i18n="hero.ctaSub">I take on focused automation builds, interface maintenance,
                         and SAP tasks.</p>
                     <div class="btnrow">
                         <a class="btn" href="mailto:joel@angehrn.net" data-i18n="hero.ctaPrimary">Email me</a>
-                        <!-- Keep href for graceful fallback; JS intercepts click to generate PDF of full site -->
                         <a class="btn" id="download-portfolio" href="./portfolio.pdf" download
                             data-i18n="hero.ctaSecondary">Download portfolio (PDF)</a>
                     </div>
@@ -59,24 +58,37 @@
         <!-- SAP -->
         <section class="sec" id="sap">
             <h3 data-i18n="sap.title">SAP</h3>
+
             <div class="card">
                 <h4 data-i18n="sap.iface">Interface maintenance</h4>
                 <ul class="list">
-                    <li><span class="dot"></span><span data-i18n="sap.if1">Monitor and fix message flows</span></li>
-                    <li><span class="dot"></span><span data-i18n="sap.if2">Reprocess failed IDocs</span></li>
+                    <li><span class="dot"></span><span data-i18n="sap.if2">Analyze existing processes and implement fixes</span></li>
                     <li><span class="dot"></span><span data-i18n="sap.if3">Health checks and alerting</span></li>
+                    <li><span class="dot"></span><span data-i18n="sap.if4">Support and development of PI/PO integrations
+                            and API mappings</span></li>
                 </ul>
             </div>
+
             <br>
+
             <div class="card">
-                <h4>Flight APIs</h4>
+                <h4 data-i18n="sap.dev">ABAP & core</h4>
                 <ul class="list">
-                    <li><span class="dot"></span><span data-i18n="sap.fa1">Search and pricing endpoints</span></li>
-                    <li><span class="dot"></span><span data-i18n="sap.fa2">Token based auth and refresh</span></li>
-                    <li><span class="dot"></span><span data-i18n="sap.fa3">Schema based request and response</span></li>
+                    <li><span class="dot"></span><span data-i18n="sap.dev1">ABAP / ABAP Objects, Open SQL, CDS
+                            Views</span></li>
+                    <li><span class="dot"></span><span data-i18n="sap.dev2">Dictionary, Dynpro / ALV, function groups
+                            and batch programs</span></li>
+                    <li><span class="dot"></span><span data-i18n="sap.dev3">SAP HANA modeling and performance
+                            optimization</span></li>
+                    <li><span class="dot"></span><span data-i18n="sap.dev4">Debugging, performance analysis, user &
+                            authorization management</span></li>
+                    <li><span class="dot"></span><span data-i18n="sap.dev5">Structured data handling (XSD, XML,
+                            JSON)</span></li>
                 </ul>
             </div>
+
             <br>
+
             <div class="card">
                 <h4 data-i18n="sap.mig">Migration projects</h4>
                 <ul class="list">
@@ -92,13 +104,18 @@
             <h3 data-i18n="rpa.title">RPA</h3>
             <div class="card">
                 <ul class="list">
-                    <li><span class="dot"></span><span data-i18n="rpa.l1">RPA Environment aufgebaut</span></li>
-                    <li><span class="dot"></span><span data-i18n="rpa.l2">Prozessautomatisierung</span></li>
-                    <li><span class="dot"></span><span data-i18n="rpa.l3">Integration von AI-Modellen mit internen
-                            Daten</span></li>
-                    <li><span class="dot"></span><span data-i18n="rpa.l4">Automatisierte Workflows</span></li>
-                    <li><span class="dot"></span><span data-i18n="rpa.l5">Daily utility automations and SAP tasks</span>
-                    </li>
+                    <li><span class="dot"></span><span data-i18n="rpa.l1">Planned, configured and operated automation
+                            environments including server setup</span></li>
+                    <li><span class="dot"></span><span data-i18n="rpa.l2">Python for process automation; PowerShell for
+                            server-side automations</span></li>
+                    <li><span class="dot"></span><span data-i18n="rpa.l3">Developed and maintained REST, SOAP and
+                            internal API integrations</span></li>
+                    <li><span class="dot"></span><span data-i18n="rpa.l4">Integrated and trained AI/ML models with
+                            internal data</span></li>
+                    <li><span class="dot"></span><span data-i18n="rpa.l5">Built automated workflows for email, invoices
+                            and customer data</span></li>
+                    <li><span class="dot"></span><span data-i18n="rpa.l6">Monitoring, maintenance support and incident
+                            handling</span></li>
                 </ul>
             </div>
         </section>
@@ -109,14 +126,12 @@
 
             <div class="card">
                 <ul class="list">
-
                     <li>
                         <span class="dot" aria-hidden="true"></span>
                         <span>
                             <strong>
                                 <a class="project-link" href="https://github.com/JoelTheProgrammer/Uni-Course-Finder"
                                     target="_blank" rel="noopener noreferrer" aria-label="Uni Course Finder on GitHub">
-                                    <!-- github icon -->
                                     <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                                         <path fill="currentColor"
                                             d="M12 .5A12 12 0 0 0 0 12.5c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.5-1.3-1.3-1.7-1.3-1.7-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.3 1.9 1.3 1 1.8 2.6 1.3 3.2 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.6-1.4-5.6-6.1 0-1.3.5-2.4 1.3-3.2-.1-.3-.6-1.5.1-3.1 0 0 1-.3 3.3 1.3a11.4 11.4 0 0 1 6 0c2.3-1.6 3.3-1.3 3.3-1.3.7 1.6.3 2.8.1 3.1.8.8 1.3 1.9 1.3 3.2 0 4.7-2.9 5.8-5.6 6.1.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6C20.6 22.3 24 17.8 24 12.5A12 12 0 0 0 12 .5z" />
@@ -193,28 +208,20 @@
                             </div>
                         </span>
                     </li>
-
                 </ul>
             </div>
         </section>
-
-
 
         <footer>
             <p>© <span id="year"></span> Joel Angehrn</p>
 
             <div class="social-row" aria-label="Social links">
                 <a class="social-link" href="https://github.com/JoelTheProgrammer" target="_blank"
-                    rel="noopener noreferrer">
-                    GitHub
-                </a>
+                    rel="noopener noreferrer">GitHub</a>
                 <a class="social-link" href="https://www.linkedin.com/in/joel-angehrn/" target="_blank"
-                    rel="noopener noreferrer">
-                    LinkedIn
-                </a>
+                    rel="noopener noreferrer">LinkedIn</a>
             </div>
         </footer>
-
     </main>
 
     <script src="./js/i18n.js"></script>
