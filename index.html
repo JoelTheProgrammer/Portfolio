@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Joel Angehrn — Portfolio</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
     <!-- html2pdf bundle for client-side PDF generation -->
     <script src="https://unpkg.com/html2pdf.js@0.9.3/dist/html2pdf.bundle.min.js"></script>
 </head>
@@ -103,31 +104,115 @@
         <!-- Private projects -->
         <section class="sec" id="private">
             <h3 data-i18n="private.title">Privat</h3>
+
             <div class="card">
                 <ul class="list">
+
                     <li>
-                        <span class="dot"></span>
+                        <span class="dot" aria-hidden="true"></span>
                         <span>
-                            <strong data-i18n="private.u1.title">Uni Course Finder</strong> -
-                            <span class="muted" data-i18n="private.u1.desc">Multi language website for finding uni
-                                courses and getting an AI response why it would fit</span>
+                            <strong>
+                                <a class="project-link" href="https://github.com/JoelTheProgrammer/Uni-Course-Finder"
+                                    target="_blank" rel="noopener noreferrer" aria-label="Uni Course Finder on GitHub">
+                                    <!-- github icon -->
+                                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                        <path fill="currentColor"
+                                            d="M12 .5A12 12 0 0 0 0 12.5c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.5-1.3-1.3-1.7-1.3-1.7-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.3 1.9 1.3 1 1.8 2.6 1.3 3.2 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.6-1.4-5.6-6.1 0-1.3.5-2.4 1.3-3.2-.1-.3-.6-1.5.1-3.1 0 0 1-.3 3.3 1.3a11.4 11.4 0 0 1 6 0c2.3-1.6 3.3-1.3 3.3-1.3.7 1.6.3 2.8.1 3.1.8.8 1.3 1.9 1.3 3.2 0 4.7-2.9 5.8-5.6 6.1.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6C20.6 22.3 24 17.8 24 12.5A12 12 0 0 0 12 .5z" />
+                                    </svg>
+                                    <span data-i18n="private.u1.title">Uni Course Finder</span>
+                                </a>
+                            </strong>
+
+                            <ul class="project-meta">
+                                <li class="muted" data-i18n="private.u1.outcome">Built a searchable, multilingual course
+                                    directory and AI-driven fit suggestions used by prospective students.</li>
+                                <li class="muted small" data-i18n="private.u1.stack">Stack: Next.js, Node.js, Python,
+                                    OpenAI, PostgreSQL</li>
+                            </ul>
                         </span>
                     </li>
+
                     <li>
-                        <span class="dot"></span>
+                        <span class="dot" aria-hidden="true"></span>
                         <span>
-                            <strong data-i18n="private.s1.title">AI Sentiment analysis</strong> -
-                            <span class="muted" data-i18n="private.s1.desc">Sentiment analysis for different languages
-                                and summarizing data</span>
+                            <strong>
+                                <a class="project-link"
+                                    href="https://github.com/JoelTheProgrammer/Study_in_Switzerland_Sentiment"
+                                    target="_blank" rel="noopener noreferrer"
+                                    aria-label="Study in Switzerland sentiment analysis on GitHub">
+                                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                        <path fill="currentColor"
+                                            d="M12 .5A12 12 0 0 0 0 12.5c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.5-1.3-1.3-1.7-1.3-1.7-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.3 1.9 1.3 1 1.8 2.6 1.3 3.2 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.6-1.4-5.6-6.1 0-1.3.5-2.4 1.3-3.2-.1-.3-.6-1.5.1-3.1 0 0 1-.3 3.3 1.3a11.4 11.4 0 0 1 6 0c2.3-1.6 3.3-1.3 3.3-1.3.7 1.6.3 2.8.1 3.1.8.8 1.3 1.9 1.3 3.2 0 4.7-2.9 5.8-5.6 6.1.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6C20.6 22.3 24 17.8 24 12.5A12 12 0 0 0 12 .5z" />
+                                    </svg>
+                                    <span data-i18n="private.s1.title">AI Sentiment analysis</span>
+                                </a>
+                            </strong>
+
+                            <ul class="project-meta">
+                                <li class="muted" data-i18n="private.s1.outcome">Analyzed Reddit posts to measure
+                                    sentiment and themes for international students considering Switzerland.</li>
+                                <li class="muted small" data-i18n="private.s1.stack">Stack: Python, Hugging Face, spaCy,
+                                    PostgreSQL, Docker</li>
+                            </ul>
                         </span>
                     </li>
+
+                    <li>
+                        <span class="dot" aria-hidden="true"></span>
+                        <span>
+                            <strong>
+                                <a class="project-link" href="https://github.com/JoelTheProgrammer" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Joel's GitHub profile">
+                                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                        <path fill="currentColor"
+                                            d="M12 .5A12 12 0 0 0 0 12.5c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.5-1.3-1.3-1.7-1.3-1.7-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.3 1.9 1.3 1 1.8 2.6 1.3 3.2 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.6-1.4-5.6-6.1 0-1.3.5-2.4 1.3-3.2-.1-.3-.6-1.5.1-3.1 0 0 1-.3 3.3 1.3a11.4 11.4 0 0 1 6 0c2.3-1.6 3.3-1.3 3.3-1.3.7 1.6.3 2.8.1 3.1.8.8 1.3 1.9 1.3 3.2 0 4.7-2.9 5.8-5.6 6.1.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6C20.6 22.3 24 17.8 24 12.5A12 12 0 0 0 12 .5z" />
+                                    </svg>
+                                    <span data-i18n="private.github.label">GitHub — JoelTheProgrammer</span>
+                                </a>
+                            </strong>
+                            <div class="muted" data-i18n="private.github.desc">More projects and code samples</div>
+                        </span>
+                    </li>
+
+                    <li>
+                        <span class="dot" aria-hidden="true"></span>
+                        <span>
+                            <strong>
+                                <a class="project-link" href="https://www.linkedin.com/in/joel-angehrn/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Joel on LinkedIn">
+                                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                        <path fill="currentColor"
+                                            d="M19 3H5c-1.1 0-2 .9-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5c0-1.1-.9-2-2-2zm-11 14H6V10h2v7zm-1-8.1c-.7 0-1.2-.5-1.2-1.1 0-.6.5-1.1 1.2-1.1s1.2.5 1.2 1.1c0 .6-.5 1.1-1.2 1.1zM18 17h-2.1v-3.4c0-.8-.3-1.3-1-1.3-.6 0-1 .4-1.2.8-.1.2-.1.5-.1.8V17H11V10h2v1c.4-.6 1-1.5 2.6-1.5 1.8 0 3.4 1.2 3.4 3.8V17z" />
+                                    </svg>
+                                    <span data-i18n="private.linkedin.label">LinkedIn — Joel Angehrn</span>
+                                </a>
+                            </strong>
+                            <div class="muted" data-i18n="private.linkedin.desc">Connect for work and collaborations
+                            </div>
+                        </span>
+                    </li>
+
                 </ul>
             </div>
         </section>
 
+
+
         <footer>
             <p>© <span id="year"></span> Joel Angehrn</p>
+
+            <div class="social-row" aria-label="Social links">
+                <a class="social-link" href="https://github.com/JoelTheProgrammer" target="_blank"
+                    rel="noopener noreferrer">
+                    GitHub
+                </a>
+                <a class="social-link" href="https://www.linkedin.com/in/joel-angehrn/" target="_blank"
+                    rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+            </div>
         </footer>
+
     </main>
 
     <script src="./js/i18n.js"></script>

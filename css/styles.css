@@ -293,3 +293,81 @@ footer {
     }
 }
 
+/* small social + project link styles */
+.project-link,
+.social-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.project-link:hover,
+.social-link:hover {
+    text-decoration: underline;
+    color: var(--accent-2);
+}
+
+.social-row {
+    margin-top: 10px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+/* project link and meta styling */
+.icon {
+    width: 18px;
+    height: 18px;
+    vertical-align: text-bottom;
+    margin-right: 8px;
+    fill: currentColor;
+    display: inline-block;
+}
+
+.project-link {
+    color: var(--accent, #0f172a);
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+    color: var(--accent-2, #0366d6);
+}
+
+/* small meta list under each project */
+.project-meta {
+    margin: 8px 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.project-meta li {
+    margin: 3px 0;
+    font-size: 0.95rem;
+    color: #6b7280;
+    /* muted */
+}
+
+/* slightly smaller stack text */
+.project-meta li.small {
+    font-size: 0.88rem;
+    color: #475569;
+}
+
+/* footer social row tweak */
+.social-row .social-link {
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+    padding: 4px 8px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #374151;
+}
