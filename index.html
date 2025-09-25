@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Joel Angehrn — Portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- html2pdf bundle for client-side PDF generation -->
+    <script src="https://unpkg.com/html2pdf.js@0.9.3/dist/html2pdf.bundle.min.js"></script>
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="container topbar-inner">
+            <div class="brand">
+                <div class="avatar" aria-hidden="true"></div>
+                <h1>Joel Angehrn</h1>
+            </div>
+            <div class="lang-switch" role="tablist" aria-label="Language switch">
+                <button class="lang-btn active" data-lang="en" role="tab" aria-selected="true">EN</button>
+                <button class="lang-btn" data-lang="de" role="tab" aria-selected="false">DE</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="wrap">
+                <div>
+                    <span class="badge" data-i18n="hero.badge">Software Developer · RPA · SAP</span>
+                    <h2 data-i18n="hero.title">I build practical SAP and automation data tools</h2>
+                    <p data-i18n="hero.sub" class="muted">Focus on SAP, RPA, Python, and AI-assisted workflows</p>
+                    <div class="pillrow">
+                        <span class="pill">SAP ABAP</span>
+                        <span class="pill">Python</span>
+                        <span class="pill">RPA</span>
+                        <span class="pill">AI</span>
+                        <span class="pill">APIs</span>
+                        <span class="pill">Data</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h4 data-i18n="hero.ctaTitle">Available for select projects</h4>
+                    <p class="muted" data-i18n="hero.ctaSub">I take on focused automation builds, interface maintenance,
+                        and SAP tasks.</p>
+                    <div class="btnrow">
+                        <a class="btn" href="mailto:joel@example.com" data-i18n="hero.ctaPrimary">Email me</a>
+                        <!-- Keep href for graceful fallback; JS intercepts click to generate PDF of full site -->
+                        <a class="btn" id="download-portfolio" href="./portfolio.pdf" download
+                            data-i18n="hero.ctaSecondary">Download portfolio (PDF)</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SAP -->
+        <section class="sec" id="sap">
+            <h3 data-i18n="sap.title">SAP</h3>
+            <div class="card">
+                <h4 data-i18n="sap.iface">Interface maintenance</h4>
+                <ul class="list">
+                    <li><span class="dot"></span><span data-i18n="sap.if1">Monitor and fix message flows</span></li>
+                    <li><span class="dot"></span><span data-i18n="sap.if2">Reprocess failed IDocs</span></li>
+                    <li><span class="dot"></span><span data-i18n="sap.if3">Health checks and alerting</span></li>
+                </ul>
+            </div>
+            <div class="card">
+                <h4>Flight APIs</h4>
+                <ul class="list">
+                    <li><span class="dot"></span><span data-i18n="sap.fa1">Search and pricing endpoints</span></li>
+                    <li><span class="dot"></span><span data-i18n="sap.fa2">Token based auth and refresh</span></li>
+                    <li><span class="dot"></span><span data-i18n="sap.fa3">Schema based request and response</span></li>
+                </ul>
+            </div>
+            <div class="card">
+                <h4 data-i18n="sap.mig">Migration projects</h4>
+                <ul class="list">
+                    <li><span class="dot"></span><span data-i18n="sap.m1">Data mapping and validation</span></li>
+                    <li><span class="dot"></span><span data-i18n="sap.m2">Cutover runbooks</span></li>
+                    <li><span class="dot"></span><span data-i18n="sap.m3">Rollback and audit trails</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- RPA -->
+        <section class="sec" id="rpa">
+            <h3 data-i18n="rpa.title">RPA</h3>
+            <div class="card">
+                <ul class="list">
+                    <li><span class="dot"></span><span data-i18n="rpa.l1">RPA Environment aufgebaut</span></li>
+                    <li><span class="dot"></span><span data-i18n="rpa.l2">Prozessautomatisierung</span></li>
+                    <li><span class="dot"></span><span data-i18n="rpa.l3">Integration von AI-Modellen mit internen
+                            Daten</span></li>
+                    <li><span class="dot"></span><span data-i18n="rpa.l4">Automatisierte Workflows</span></li>
+                    <li><span class="dot"></span><span data-i18n="rpa.l5">Daily utility automations and SAP tasks</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Private projects -->
+        <section class="sec" id="private">
+            <h3 data-i18n="private.title">Privat</h3>
+            <div class="card">
+                <ul class="list">
+                    <li>
+                        <span class="dot"></span>
+                        <span>
+                            <strong data-i18n="private.u1.title">Uni Course Finder</strong> -
+                            <span class="muted" data-i18n="private.u1.desc">Multi language website for finding uni
+                                courses and getting an AI response why it would fit</span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="dot"></span>
+                        <span>
+                            <strong data-i18n="private.s1.title">AI Sentiment analysis</strong> -
+                            <span class="muted" data-i18n="private.s1.desc">Sentiment analysis for different languages
+                                and summarizing data</span>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <p>© <span id="year"></span> Joel Angehrn</p>
+        </footer>
+    </main>
+
+    <script src="./js/i18n.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
