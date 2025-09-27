@@ -7,7 +7,6 @@
     <title>Joel Angehrn — Portfolio</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" type="image/svg+xml" href="logo.png">
-    <!-- html2pdf bundle for client-side PDF generation -->
     <script src="https://unpkg.com/html2pdf.js@0.9.3/dist/html2pdf.bundle.min.js"></script>
 </head>
 
@@ -15,7 +14,7 @@
     <header class="topbar">
         <div class="container topbar-inner">
             <div class="brand">
-                <div class="avatar" aria-hidden="true"></div>
+                <img class="avatar" src="logo_white.png" alt="Joel Angehrn">
                 <h1>Joel Angehrn</h1>
             </div>
             <div class="lang-switch" role="tablist" aria-label="Language switch">
@@ -26,7 +25,6 @@
     </header>
 
     <main class="container">
-        <!-- Hero -->
         <section class="hero">
             <div class="wrap">
                 <div>
@@ -42,30 +40,34 @@
                     </div>
                 </div>
 
-                <div class="card">
-                    <h4 data-i18n="hero.ctaTitle">Available for select projects</h4>
-                    <p class="muted" data-i18n="hero.ctaSub">I take on focused automation builds, interface maintenance,
-                        and SAP tasks.</p>
+                <div class="card cta-card">
+                    <h4 data-i18n="hero.ctaTitle">Contact info</h4>
+                    <!--<p class="muted" data-i18n="hero.ctaSub">I take on focused automation builds, interface maintenance,
+                        and SAP tasks.</p>-->
+                    <br>
                     <div class="btnrow">
                         <a class="btn" href="mailto:joel@angehrn.net" data-i18n="hero.ctaPrimary">Email me</a>
                         <a class="btn" id="download-portfolio" href="./portfolio.pdf" download
                             data-i18n="hero.ctaSecondary">Download portfolio (PDF)</a>
+                        <a class="btn" href="https://github.com/JoelTheProgrammer" target="_blank"
+                            rel="noopener noreferrer">GitHub</a>
+                        <a class="btn" href="https://www.linkedin.com/in/joel-angehrn/" target="_blank"
+                            rel="noopener noreferrer">LinkedIn</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SAP -->
         <section class="sec" id="sap">
             <h3 data-i18n="sap.title">SAP</h3>
-
+            <br>
             <div class="card">
                 <h4 data-i18n="sap.iface">Interface maintenance</h4>
                 <ul class="list">
-                    <li><span class="dot"></span><span data-i18n="sap.if2">Analyze existing processes and implement fixes</span></li>
+                    <li><span class="dot"></span><span data-i18n="sap.if1">Monitor and fix message flows</span></li>
                     <li><span class="dot"></span><span data-i18n="sap.if3">Health checks and alerting</span></li>
-                    <li><span class="dot"></span><span data-i18n="sap.if4">Support and development of PI/PO integrations
-                            and API mappings</span></li>
+                    <li><span class="dot"></span><span data-i18n="sap.if4">Support and develop PI/PO integrations and
+                            API mappings</span></li>
                 </ul>
             </div>
 
@@ -93,13 +95,12 @@
                 <h4 data-i18n="sap.mig">Migration projects</h4>
                 <ul class="list">
                     <li><span class="dot"></span><span data-i18n="sap.m1">Data mapping and validation</span></li>
-                    <li><span class="dot"></span><span data-i18n="sap.m2">Designing new Software</span></li>
+                    <li><span class="dot"></span><span data-i18n="sap.m2">Cutover runbooks</span></li>
                     <li><span class="dot"></span><span data-i18n="sap.m3">Rollback and audit trails</span></li>
                 </ul>
             </div>
         </section>
 
-        <!-- RPA -->
         <section class="sec" id="rpa">
             <h3 data-i18n="rpa.title">RPA</h3>
             <div class="card">
@@ -120,10 +121,8 @@
             </div>
         </section>
 
-        <!-- Private projects -->
         <section class="sec" id="private">
             <h3 data-i18n="private.title">Personal</h3>
-
             <div class="card">
                 <ul class="list">
                     <li>
@@ -139,7 +138,6 @@
                                     <span data-i18n="private.u1.title">Uni Course Finder</span>
                                 </a>
                             </strong>
-
                             <ul class="project-meta">
                                 <li class="muted" data-i18n="private.u1.outcome">Built a searchable, multilingual course
                                     directory and AI-driven fit suggestions used by prospective students.</li>
@@ -164,7 +162,6 @@
                                     <span data-i18n="private.s1.title">AI Sentiment analysis</span>
                                 </a>
                             </strong>
-
                             <ul class="project-meta">
                                 <li class="muted" data-i18n="private.s1.outcome">Analyzed Reddit posts to measure
                                     sentiment and themes for international students considering Switzerland.</li>
@@ -213,8 +210,7 @@
         </section>
 
         <footer>
-            <p>© <span id="year"></span> Joel Angehrn</p>
-
+            <p>© <span id="year"></span> Joel Angehrn — <a href="mailto:joel@angehrn.net">joel@angehrn.net</a></p>
             <div class="social-row" aria-label="Social links">
                 <a class="social-link" href="https://github.com/JoelTheProgrammer" target="_blank"
                     rel="noopener noreferrer">GitHub</a>
