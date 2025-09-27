@@ -22,7 +22,7 @@
   "sap.m1": "Map, transform and validate legacy booking and master data to target SAP schemas; perform XSD/XML checks and data reconciliation",
   "sap.m2": "Plan and execute migration cutovers: create runbooks, automate data loads, coordinate cutover tasks and run dry-runs",
   "sap.m3": "Implement rollback procedures and full audit trails; run post-migration verification and reconciliation reporting",
-  "rpa.title": "RPA",
+  "rpa.title": "Robotic process automation (RPA)",
   "rpa.l1": "Planned, configured and operated automation environments including server setup",
   "rpa.l2": "Python for process automation; PowerShell for server-side automations",
   "rpa.l3": "Developed and maintained REST, SOAP and internal API integrations",
